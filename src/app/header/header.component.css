@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(87, 82, 82);
+}
+label{
+    /* color: ; */
+    color: rgb(211, 203, 203);
+}
+   /* first div background */
+   .top{
+    background-color: #000;
+    height: 75px;
+    }
+    /* 1 div */
+    /* logo */
+.movielogo{
+    padding-left: 5px;
+    padding-top: 6px;
+    height: 60px;
+    image-resolution: 100px;
+    
+}
+
+.top input{  
+    /* position: relative; */
+    width: 500px;
+    /* height: 30px; */
+    margin-bottom: 100px;
+    margin-left: 200px;
+    /* margin-top: px; */
+    padding-top: 10px;
+    padding-right: 100px;
+    padding-bottom: 2px;
+    text-align: left;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid rgb(202, 25, 25);
+}
+/* sigup button in 1 div*/
+
+.si{
+    margin-left: 400px;
+    text-align: center;
+    padding-right: 10px;
+    margin-bottom: 500px;
+    padding-top: 0px;
+    font-style: italic;
+    }
+    a{
+        text-decoration: none; 
+        color:red;
+        
+        }
+     
+    /* 2 div tab  */
+    .ul{
+        float: left;
+        list-style-type: none;
+        padding: 0; 
+        overflow: hidden;
+        background-color: #333;
+        /* border: 1px solid black; */
+        box-shadow:1px 1px 2px 2px black;
+        height:40px;
+        width: 100%;
+    }
+    /* list hover */
+    li a:hover{
+        
+        color:white;
+        font-size:  20px;
+        box-shadow:12px -12px 12px 2px crimson;
+    
+    }
+    /* list div arrangements */
+     li{ 
+        float: left;
+        display: block;
+        color:red;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        
+    }
+    .slideImage{
+        height: 500px;
+    }

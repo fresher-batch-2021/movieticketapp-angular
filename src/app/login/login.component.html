@@ -1,0 +1,60 @@
+<!-- <app-header></app-header> -->
+<!-- <router-outlet></router-outlet> -->
+<div class="pagecolor">
+    <section>
+  
+
+    <div class="container">
+        <div class="box1">
+    <div class="imgcontainer">
+        <img src="assets/images/login.jpg" alt="Avatar" class="avatar">
+      </div>
+    
+      <form (ngSubmit)="login()" style="border:1px solid #ccc">
+    <label for="Email"><strong>Email</strong></label>
+    <input type="email" [(ngModel)]="email" placeholder="Enter Email" name="username" id="username" required>
+
+    <label for="password"><strong>password</strong></label>
+    <input type="password" [(ngModel)]="password" placeholder="Enter password" name="password" id="password1"required>
+    
+    <button class="login" type="submit">login</button>
+    <label><br>
+    <input type="checkbox" checked="checked" name="remember" 
+    style="margin-bottom: 15px;">Remember Me 
+    </label>
+
+<div class="clearfix" style="background-color:#f1f1f1">
+    <button type="reset" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="forgetpassword.html">Password?</a></span>
+  </div>
+</form>
+</div>
+</div>
+
+    </section>
+  </div>
+   <!-- <script src="assets/jquery.min.js"></script> 
+  <script>
+      $("#header").load("header.html")
+      function Login(){
+          event.preventDefault();
+          const username =document.querySelector("#username").value;
+          const password =document.querySelector("#password1").value;
+          console.log(username+"-"+password);
+          if(password == null || password.trim()=="" ){
+           alert("password cannot be blank");
+          }
+          else{
+          const userobj={
+            "username":username,
+            "password":password
+          };
+          console.log(userobj);
+          alert("login successful");
+          window.location.href="movies.html";
+          }
+        
+
+      }
+
+  </script> -->
