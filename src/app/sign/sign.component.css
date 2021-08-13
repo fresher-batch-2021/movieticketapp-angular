@@ -44,7 +44,7 @@ body{
         border: 2px solid red;
 
     }
-    #date, #nooftickets, #time, #username, #email, #password, #password-repeat, #password1
+    #date, #nooftickets, #time, #username, #email, #password, #passwordR, #password1
     {
         width: 100%;
         padding: 10px;

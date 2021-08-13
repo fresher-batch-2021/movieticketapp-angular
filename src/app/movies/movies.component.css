@@ -1,0 +1,13 @@
+
+.Filter{
+    width: 20%;
+    position: absolute;
+    top: 150px;
+    color: rgb(211, 203, 203);  
+    left: 10px;
+}
+.moviesPage{
+    padding: 20px;
+    /* text-align: center; */
+    float: right;
+}

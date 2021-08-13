@@ -1,88 +1,45 @@
-<h1>
-    <u class="moviesHead">Movies</u>
-</h1><br>
-
 <div class="moviesPage">
+    <h1>
+        <u>Theatres</u>
+    </h1><br>
+    <a href="book.html"><img class = "movielogo1" src="assets/images/s.jpg" alt="no image"></a>
+    Sangam Cinemas 4K RGB Laser Dolby Atmos
+Chennai<br>
 
+<a href="book.html"><img class = "movielogo1" src="assets/images/d.jfif" alt="no image"></a>
+Devi Cineplex 4K RGB Laser Dolby Atmos
+Chennai<br>
+<a href="book.html"><img class = "movielogo1" src="assets/images/kasi.jpg" alt="no image"></a>
+Kasi Threatre 4K RGB Laser Dolby Atmos
+Chennai<br>
+<a href="book.html"><img class = "movielogo1" src="assets/images/vettri.jfif" alt="no image"></a>
+Kasi Threatre 4K RGB Laser Dolby Atmos
+Chennai<br>
 
-
-
-</div>
-<div class="filter">
-<h1>Filter By</h1>
-<a href="#">Clear</a>
-
-<h3>Language</h3>
-<!-- <form onsubmit="tamil()"> -->
-<label><br>
-<input type="checkbox"  name="Language" 
-style="margin-bottom: 15px;">Tamil
-</label>
-<label><br>
-<input type="checkbox"  name="Language" 
-style="margin-bottom: 15px;">English
-</label>
-<!-- <h3>Experience</h3>
-<input type="checkbox"  name="type" 
-style="margin-top: 15px;">2D
-</label>
-<h3>Genre</h3>
-<input type="checkbox"  name="type" 
-style="margin-top: 15px;">Action
-</label><br>
-<input type="checkbox"  name="type" 
-style="margin-top: 15px;">Thriller
-</label> -->
-
-</div>
-<script src="assets/jquery.min.js"></script>
-<script>
-    $("#header").load("header.html")
-//     var images = [{ imageUrl: "sarpatta.jpg",language:"tamil",title:"sarpatta"}, { imageUrl: "valimai.jfif",language:"tamil",title:"valimai" }, { imageUrl: "3036057.jpg",language:"tamil", title:"Master"},
-//     { imageUrl: "joker.jpg", language:"english",title:"joker" }, { imageUrl: "doctor.jfif",language:"tamil",title:"doctor"}, { imageUrl: "karnan.jpg",language:"tamil",title:"karnan"}];
-// // displaying images 
-       
-        const url ="https://product-mock-api.herokuapp.com/movieapp/api/v1/movies";
-        axios.get(url).then(res=>{
-            // const title=res.title;
-            // const image_url=res.image_url;
-            // const language=res.language;
-            // alert(title);
-            const datas=res.data;
-            // alert(datas);
-            for(let la of datas){
-                let content = "";
-        var count = 0;
-        for (let img of datas) {
-
-            content = content + 
-             `
-            <div class="product">
-                
-                  <a href="theatres.html">  <img class="productImg" src="images/${img.image_url}" id="productImg" alt=""></a>
-             
-            </div>`;
-            count = count + 1;
-            if (count == 2) {
-                content = content + `<br>`;
-                count = 0;
-            }
-
-        }
-        document.querySelector(".moviesPage").innerHTML = content;
-
-    //             <img class="productImg" src="Assets/Images/${img.image_url}" onClick=specOpen(${img.id}) id="productImg" alt="">    
-    // <p class="movieName" id="movieName">${img.name}</p>
-    // <p class="moviePrice" id="moviePrice" >${img.price}</p>
-    // <p>${img.id}</p>
-    
-    //         
-}
-
-        }).catch(err=>{
-
-        });
-        // let filteredMovies = images.filter(obj=>obj.language=="tamil"|| obj.language=='english');
-        // let filteredMovies = images.filter(obj=> selectedLanguages.includes(obj.language));
         
-</script>
+    
+</div>
+    <div class="filter">
+        <h1>Filter By</h1>
+     <a href="#">Clear</a>
+    
+             <label>
+            <h3>Experience</h3>
+        
+            <input type="checkbox"  name="type"    id="experience" value="Dolby Atmos"
+            style="margin-top: 15px;">Dolby Atmos
+            </label>
+            <br>
+            <label>
+            <input type="checkbox"  name="type"  id="experience"    value="2K"
+            style="margin-top: 15px;">2K<br>
+
+            </label>
+            <label>
+            <input type="checkbox"  name="type" id="experience" value="4k"
+            style="margin-top: 15px;">4K
+            </label><br>
+            <button type="button">Apply</button>
+    
+        
+    </div>

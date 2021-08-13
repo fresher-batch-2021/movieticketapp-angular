@@ -12,6 +12,8 @@ import { AboutComponent } from './about/about.component';
 import { BookComponent } from './book/book.component';
 import { SignComponent } from './sign/sign.component';
 import { MoviesComponent } from './movies/movies.component';
+import { BookingConfirmationComponent } from './booking-confirmation/booking-confirmation.component';
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { MoviesComponent } from './movies/movies.component';
     AboutComponent,
     BookComponent,
     SignComponent,
-    MoviesComponent
+    MoviesComponent,
+    BookingConfirmationComponent,
+    ForgetPasswordComponent
   ],
   imports: [
     BrowserModule,

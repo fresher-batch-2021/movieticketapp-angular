@@ -1,17 +1,17 @@
-<form action="login.html" onsubmit="Register()" style="border:1px solid #ccc">
+<form (ngSubmit)="Register()" style="border:1px solid #ccc">
     <div class="container">
     <div class="box1">
    <h1>SignUp</h1><br>
    <p>Please fill in this form to create an account</p><br>
    <hr>
    <label for ="email"><strong>Email</strong></label>
-   <input type="email" placeholder="Enter Mail" name="email" id="email" required><br>
+   <input type="email" [(ngModel)]="email" placeholder="Enter Mail" name="email" id="email" required><br>
    
    <label for ="password"><strong>password</strong></label>
-   <input type="password" placeholder="Enter password" name="password" id="password"required><br>
+   <input type="password" [(ngModel)]="password"  placeholder="Enter password" name="password" id="password"required><br>
 
-   <label for ="password-repeat"><strong>repeat password</strong></label>
-   <input type="password" placeholder="repeat password" name="password-repeat" id="password-repeat"required><br>
+   <label for ="passwordR"><strong>repeat password</strong></label>
+   <input type="password" [(ngModel)]="passwordR" placeholder="repeat password" name="password" id="passwordR"required><br>
 
    <label>
    <input type="checkbox" checked="checked" name="remember" 
