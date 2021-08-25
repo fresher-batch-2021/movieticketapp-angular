@@ -14,6 +14,11 @@ import { SignComponent } from './sign/sign.component';
 import { MoviesComponent } from './movies/movies.component';
 import { BookingConfirmationComponent } from './booking-confirmation/booking-confirmation.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+// import { AddMovie } from './add-movie.js/add-movie.js.component';
+import { AdminComponent } from './admin/admin.component';
+import { AddMovieComponent } from './add-movie/add-movie.component';
+import { DeleteMovieComponent } from './delete-movie/delete-movie.component';
+import { ListMovieComponent } from './list-movie/list-movie.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,12 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
     SignComponent,
     MoviesComponent,
     BookingConfirmationComponent,
-    ForgetPasswordComponent
+    ForgetPasswordComponent,
+    // AddMovie.JsComponent,
+    AdminComponent,
+    AddMovieComponent,
+    DeleteMovieComponent,
+    ListMovieComponent
   ],
   imports: [
     BrowserModule,

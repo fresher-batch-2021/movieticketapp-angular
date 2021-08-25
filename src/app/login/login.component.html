@@ -1,5 +1,10 @@
-<!-- <app-header></app-header> -->
+<!-- <app-header></app-header> --> 
 <!-- <router-outlet></router-outlet> -->
+
+
+
+
+
 <div class="pagecolor">
     <section>
   
@@ -21,7 +26,13 @@
     <label><br>
     <input type="checkbox" checked="checked" name="remember" 
     style="margin-bottom: 15px;">Remember Me 
-    </label>
+    </label><br>
+    <!-- <input type="radio" id="user" name="username" value="user">
+      <label for="user">user</label> -->
+      <input type="radio" id="admin" name="admin" value="admin">
+      <label for="Admin">Admin</label><br>
+  
+
 
 <div class="clearfix" style="background-color:#f1f1f1">
     <button type="reset" class="cancelbtn">Cancel</button>
@@ -33,28 +44,23 @@
 
     </section>
   </div>
-   <!-- <script src="assets/jquery.min.js"></script> 
-  <script>
-      $("#header").load("header.html")
-      function Login(){
-          event.preventDefault();
-          const username =document.querySelector("#username").value;
-          const password =document.querySelector("#password1").value;
-          console.log(username+"-"+password);
-          if(password == null || password.trim()=="" ){
-           alert("password cannot be blank");
-          }
-          else{
-          const userobj={
-            "username":username,
-            "password":password
-          };
-          console.log(userobj);
-          alert("login successful");
-          window.location.href="movies.html";
-          }
-        
 
-      }
+  <!-- <input type="text" id="name" name="name" class="form-control"
+      required minlength="4" appForbiddenName="bob"
+      [(ngModel)]="hero.name" #name="ngModel">
 
-  </script> -->
+<div *ngIf="name.invalid && (name.dirty || name.touched)"
+    class="alert">
+
+  <div *ngIf="name.errors?.required">
+    Name is required.
+  </div>
+  <div *ngIf="name.errors?.minlength">
+    Name must be at least 4 characters long.
+  </div>
+  <div *ngIf="name.errors?.forbiddenName">
+    Name cannot be Bob.
+  </div>
+
+</div> -->
+   

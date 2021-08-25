@@ -1,0 +1,37 @@
+
+
+
+    <table>
+        <Caption>List Movie Admin</Caption>
+        <thead>
+            <tr>
+                <td>s.no</td>
+                <td>image_url</td>
+                <td>movie name</td>
+                <td>Language</td>
+                 <td>price</td>
+                <td>Delete</td> 
+            </tr> 
+    </thead> 
+        <tbody *ngFor='let movie of movies; let i=index'>
+            <tr>
+                <td>{{i+1}}</td> 
+                
+                <td>
+                <figure> 
+                <img src='{{"assets/images/"+movie.imageUrl}}' alt=""> 
+         </figure>
+                <figcaption>hello</figcaption>
+                </td> 
+                
+                <td>{{movie.title}}</td>
+                <td>{{movie.language}}</td>
+                 <!-- <td>{{movie.imageUrl}}</td> -->
+                <td>{{movie.id}}</td> 
+                <td><button (click)="delete(movie.id)">delete movie</button></td>
+            </tr>
+        </tbody>
+        <button routerLink='../add-movie'>add movie</button>
+        <button routerLink='../list-movie'>list movie</button>
+    
+    </table> 
